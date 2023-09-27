@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="files.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    
+
+    <title>EzNotes</title>
+  </head>
+  <body>
+    <nav>
+        <label class="logo">EzNotes</label>
+        <ul>
+            <li><a href="main2.html" style="text-decoration: none;">Home</a></li>
+            <li><a href="about2.html" style="text-decoration: none;">About</a></li>
+            <li><a href="contact2.html" style="text-decoration: none;">Contact</a></li>
+        
+            <button id="btn" onclick="menu()"><i class="ri-menu-3-line"></i></button>
+        </ul>
+        <div class="drop" id="menu">
+            <li><a href="main2.html" style="text-decoration: none;">Home</a></li>
+            <li><a href="about2.html" style="text-decoration: none;">About</a></li>
+            <li><a href="contact2.html" style="text-decoration: none;">Contact</a></li>
+            
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <div class="container mt-4">
+        <div class="row ">
+          <div class="col-md-4 border">
+               <center>
+                  
+                  <h4>BSC-Computer Science</h4>
+                  <p >First Year</p>
+                  <p >Second Year</p>
+                  <p >Third Year</p>
+                  <button type="button" onclick="re()" class="btn btn-success">View</button>
+               </center>
+          </div>
+          
+         
+      </div>
+      </div>    
+      <script>
+        function menu()
+        {
+             document.getElementById('menu').className="drop open";
+             
+        }
+        function re()
+        {
+        	window.location.href="Bcs.html";
+        }
+        
+        
+    </script>
+ 
+  </body>
+</html>

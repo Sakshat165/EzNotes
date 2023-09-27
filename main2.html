@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzNotes</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+    <nav>
+        <label class="logo">EzNotes</label>
+        <ul>
+            <li><a href="main2.html">Home</a></li>
+            <li><a href="about2.html">About</a></li>
+            <li><a href="contact2.html">Contact</a></li>
+            <li><a href="main.html">Sign Out</a></li>
+        
+            <button id="btn" onclick="menu()"><i class="ri-menu-3-line"></i></button>
+        </ul>
+        <div class="drop" id="menu">
+            <li><a href="main2.html">Home</a></li>
+            <li><a href="about2.html">About</a></li>
+            <li><a href="contact2.html">Contact</a></li>
+            <li><a href="main.html">Sign Out</a></li>
+            
+        </div>
+    </nav>
+    <div class="parent">
+        <div class="left">
+            <h1>Streamline Your Learning with <span>EzNotes:</span>Your Go-To Study Companion!</h1>
+            <p>Effortless Note-Taking, Organized Learning, and Academic Success Made Simple</p><br>
+            <button><a href="files.html">Explore Now</a></button>
+        </div>
+        <div class="right">
+            <img src="./notes.jpg" alt="">
+        </div>
+    
+    </div>
+    <script>
+        function menu()
+        {
+             document.getElementById('menu').className="drop open";
+             
+        }
+        
+    </script>
+
+</body>
+</html>
