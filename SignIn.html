@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - EasyNotes</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <label class="logo">EzNotes</label>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="SignIn.html">Sign-In</a></li>
+                <button id="btn" onclick="menu()"><i class="ri-menu-3-line"></i></button>
+            </ul>
+            <div class="drop" id="menu">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="SignIn.html">Sign-In</a></li>
+            </div>
+        </nav>
+    </header>
+    <section id="main-content">
+        <h2>Sign In</h2>
+        <br>
+        <form action="signin.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"  required>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <br>
+            <button type="submit">Sign In</button>
+            <br>
+            <br>
+            <br>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 EasyNotes</p>
+    </footer>
+    <script>
+        function menu()
+        {
+             document.getElementById('menu').className="drop open";
+             
+        }
+        
+    </script>
+</body>
+</html>

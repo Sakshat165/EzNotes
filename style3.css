@@ -1,0 +1,165 @@
+/* styles.css */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header nav{
+    background: #008B8B;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo
+{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 80px;
+}
+header nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+a:hover{
+    background: #5F9EA0;
+    padding: 10px 10px;
+    transition: .5s;
+
+}
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #008B8B;
+}
+
+section h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #333;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #008B8B;
+    color: #fff;
+}
+    header nav i{
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+        display: none;
+    }
+    .drop{
+        display: none;
+        position: absolute;
+        right: 6px;
+        background-color: #008B8B;
+        top: 6px;
+        height: 0px;
+        width: 200px;
+        overflow: hidden;
+        transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .drop.open{
+        height:62px
+    }
+    .drop li{
+        display:none;
+        align-items: center;
+        justify-content: center;
+    }
+    .drop li a{
+        color: white;
+    }
+    header button{
+        background-color: #008B8B;
+        padding: 0 10px;
+        border: none;
+    }
+button
+{
+    padding: 9px 15px;
+    background-color:#5F9EA0;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+
+@media (max-width:770px)
+{
+    nav{
+        background: #008B8B;
+        height: 70px;
+        width:100%;
+    }
+    label.logo{
+        font-size: 28px;
+        padding-left: 30px
+    }
+    header nav ul li{
+        display: none;
+    }
+    header nav i{
+        padding: 25px 0;
+        font-size: 25px;
+        font-weight: bold;
+        display: block;
+    }
+    header nav i:hover{
+        background: #5F9EA0;
+        padding: 20px 20px;
+        transition: .5s;
+    
+    }
+    .drop{
+        display:flex;
+        justify-content:space-evenly ;
+    }
+    
+    .drop li{
+        display: flex;
+    }
+    
+    
+}
